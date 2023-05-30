@@ -1,9 +1,11 @@
+import {estado} from "./store.js";
+
 const form = document.forms.entrada;
 form.addEventListener('submit', envia);
 
-let estado = 0;
 
-atualiza();
+
+atualiza();  //coloca o valor no inicio quando abre a pagina
 
 function envia(evento) {
     evento.preventDefault();
