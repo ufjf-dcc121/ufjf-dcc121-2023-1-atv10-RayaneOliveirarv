@@ -1,6 +1,11 @@
-export const store = { estado: 0};
-export default store;
-export const store2 = {estado:0};
-export const store3 = {estado:0};
+export const store = { estado: [0, 1, 2, 3]};
 
 
+
+export function adicionar(valor){
+    store.estado.push(valor);
+}
+
+export function getitems(){
+    return [...store.estado]; 
+}
