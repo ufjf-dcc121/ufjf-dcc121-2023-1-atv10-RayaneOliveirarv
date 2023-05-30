@@ -3,6 +3,8 @@ form.addEventListener('submit', envia);
 
 let estado = 0;
 
+atualiza();
+
 function envia(evento) {
     evento.preventDefault();
     console.log('Formulário enviado!');
@@ -12,5 +14,5 @@ function envia(evento) {
 
 function atualiza(){
     const ol = document.querySelector('ol'); 
-    ol.innerHTML = `<li>${estado}</li>`   // mudei o html do elemento
+    ol.innerHTML = `<li>${estado}</li>`;  // mudei o html do elemento
 }
