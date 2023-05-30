@@ -1,11 +1,17 @@
-import {adicionar, getitems} from "./store.js";
+import {adicionar, getitems, remover} from "./store.js";
 
 const form = document.forms.entrada;
 form.addEventListener('submit', envia);
-
+form.remover.addEventListener('click',remove);
 
 
 atualiza();  //coloca o valor no inicio quando abre a pagina
+
+function remove(){
+    console.log('remove clickado!');
+    remover();
+    atualiza();
+}
 
 function envia(evento) {
     evento.preventDefault();
@@ -26,6 +32,6 @@ function atualiza(){
     li.textContent = items[i];
     ol.appendChild(li);
     }
-   items().push("Boom!");
+   items.push("Boom!");
 }
 
