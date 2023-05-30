@@ -21,7 +21,7 @@ function atualiza(){
     const ol = document.querySelector('ol');
     ol.innerHTML = "";
     const items = getitems();
-    for(let i=0; i< items().length; i++){
+    for(let i=0; i< items.length; i++){
     const li = document.createElement('li');
     li.textContent = items[i];
     ol.appendChild(li);
